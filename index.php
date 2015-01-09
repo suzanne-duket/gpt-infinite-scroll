@@ -107,7 +107,7 @@
         var waypoint = new Waypoint({
           element: $('.copy-column'),
           handler: function(direction) {
-            notify(this.id + ' hit')
+            getIpsum()
           }
         });
 
