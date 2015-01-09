@@ -99,22 +99,44 @@
         }
         $(document).ready(function() {
           getIpsum();
+          //Waypoints
+          var $copyWaypoint = $('#copy-column-waypoint');
+          new Waypoint({
+            element: $copyWaypoint,
+            handler: function() {
+              getIpsum()
+            }, 
+            continuous: false
+          });
+          var $adsWaypoint = $('#ads-column-waypoint');
+          new Waypoint({
+            element: $copyWaypoint,
+            handler: function() {
+              moreContent()
+            }, 
+            continuous: false
+          });
         });
 
 
         //Waypoints
-        var copyWaypoint = new Waypoint({
-          element: $('#copy-column-waypoint'),
-          handler: function(direction) {
+        var $copyWaypoint = $('#copy-column-waypoint');
+        new Waypoint({
+          element: $copyWaypoint,
+          handler: function() {
             getIpsum()
-          }
+          }, 
+          continuous: false
         });
-        var adsWaypoint = new Waypoint({
-          element: $('#ads-column-waypoint'),
-          handler: function(direction) {
+        var $adsWaypoint = $('#ads-column-waypoint');
+        new Waypoint({
+          element: $copyWaypoint,
+          handler: function() {
             moreContent()
-          }
+          }, 
+          continuous: false
         });
+        
 
     </script>
   </head>
