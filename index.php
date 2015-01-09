@@ -101,6 +101,17 @@
         $(document).ready(function() {
           getIpsum();
         });
+
+
+        //Waypoints
+        var waypoint = new Waypoint({
+          element: document.getElementById('copy-column'),
+          handler: function() {
+            notify('Basic waypoint triggered'),
+            getIpsum()
+          }
+        });
+
     </script>
   </head>
   <body>
