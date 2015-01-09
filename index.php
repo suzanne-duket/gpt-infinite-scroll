@@ -90,7 +90,6 @@
           { 'type':'meat-and-filler', 'start-with-lorem':'ipsumCounter', 'paras':'3' }, 
           function(baconGoodness) {
             if (baconGoodness && baconGoodness.length > 0) {
-              $(".copy-column").html('');
               for (var i = 0; i < baconGoodness.length; i++)
                 $(".copy-column").append('<p>' + baconGoodness[i] + '</p>');
               $(".copy-column").show();
