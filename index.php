@@ -103,10 +103,16 @@
 
 
         //Waypoints
-        var waypoint = new Waypoint({
-          element: $('.copy-column'),
+        var copy-waypoint = new Waypoint({
+          element: $('#copy-column-waypoint'),
           handler: function(direction) {
             getIpsum()
+          }
+        });
+        var ads-waypoint = new Waypoint({
+          element: $('#ads-column-waypoint'),
+          handler: function(direction) {
+            moreContent()
           }
         });
 
@@ -120,10 +126,8 @@
       
       <div class="row">
         <div class="col-md-8 copy-column">
-          http://www.fillerati.com/json/getpara?b=thwzrdfz&c=1
-
-        
-
+          <section class="ipsum-container"></section>
+          <div id="copy-column-waypoint"></div>
         </div>
         <div class="col-md-4 ads-column">
           <div id="ads">
@@ -149,6 +153,7 @@
               </script>
             </div>
           </div>
+          <div id="ads-column-waypoint"></div>
         </div>
       </div>
     </div>
