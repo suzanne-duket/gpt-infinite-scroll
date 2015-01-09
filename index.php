@@ -103,13 +103,13 @@
 
 
         //Waypoints
-        var copy-waypoint = new Waypoint({
+        var copyWaypoint = new Waypoint({
           element: $('#copy-column-waypoint'),
           handler: function(direction) {
             getIpsum()
           }
         });
-        var ads-waypoint = new Waypoint({
+        var adsWaypoint = new Waypoint({
           element: $('#ads-column-waypoint'),
           handler: function(direction) {
             moreContent()
