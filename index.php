@@ -105,10 +105,9 @@
 
         //Waypoints
         var waypoint = new Waypoint({
-          element: document.getElementById('copy-column'),
-          handler: function() {
-            notify('Basic waypoint triggered'),
-            getIpsum()
+          element: $('.copy-column'),
+          handler: function(direction) {
+            notify(this.id + ' hit')
           }
         });
 
