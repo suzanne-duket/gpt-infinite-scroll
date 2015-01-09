@@ -3,9 +3,10 @@
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8"> 
     <title>Google tags test</title>
-    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
 
-    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/bower_components/waypoints/lib/noframework.waypoints.min.js"></script>
 
     <style type="text/css" media="screen">
       #ads div {
