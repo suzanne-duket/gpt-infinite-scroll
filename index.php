@@ -15,6 +15,9 @@
         height: 250px;
         width: 300px;
       }
+      #ads-column-waypoint {
+        clear: both;
+      }
     </style>
     <script type='text/javascript'>
       var googletag = googletag || {};
@@ -91,8 +94,7 @@
           function(baconGoodness) {
             if (baconGoodness && baconGoodness.length > 0) {
               for (var i = 0; i < baconGoodness.length; i++)
-                $(".copy-column").append('<p>' + baconGoodness[i] + '</p>');
-              $(".copy-column").show();
+                $(".ipsum-container").append('<p>' + baconGoodness[i] + '</p>');
             }
             ipsumCounter += 3;
           });
@@ -117,26 +119,6 @@
             continuous: false
           });
         });
-
-
-        //Waypoints
-        var $copyWaypoint = $('#copy-column-waypoint');
-        new Waypoint({
-          element: $copyWaypoint,
-          handler: function() {
-            getIpsum()
-          }, 
-          continuous: false
-        });
-        var $adsWaypoint = $('#ads-column-waypoint');
-        new Waypoint({
-          element: $copyWaypoint,
-          handler: function() {
-            moreContent()
-          }, 
-          continuous: false
-        });
-        
 
     </script>
   </head>
