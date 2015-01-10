@@ -105,7 +105,7 @@
           getIpsum();
 
           //Waypoints
-          var $adsWaypoint = $('#ads-column-waypoint');
+          var $adsWaypoint = $('#ad-container');
           new Waypoint({
             element: $adsWaypoint,
             handler: function() {
@@ -113,17 +113,17 @@
               console.log("more please")
             }, 
             continuous: false,
-            offset: '100%'
+            offset: 'bottom-in-view'
           });
 
-          var $copyWaypoint = $('#copy-column-waypoint');
+          var $copyWaypoint = $('#ipsum-container');
           new Waypoint({
             element: $copyWaypoint,
             handler: function() {
               getIpsum()
             }, 
             continuous: false,
-            offset: '120%'
+            offset: 'bottom-in-view'
           });
           
         });
@@ -138,11 +138,10 @@
       
       <div class="row">
         <div class="col-md-8 copy-column">
-          <section class="ipsum-container"></section>
-          <div id="copy-column-waypoint" class="waypoint"></div>
+          <section id="ipsum-container"></section>
         </div>
         <div class="col-md-4 ads-column">
-          <div id="ads">
+          <div id="ad-container">
             <div id='initialAd-0' style='width:300px; height:250px;'>
               <script>
                 // Call display() to register the slot as ready
@@ -165,7 +164,6 @@
               </script>
             </div>
           </div>
-          <div id="ads-column-waypoint" class="waypoint"></div>
         </div>
       </div>
     </div>
