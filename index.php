@@ -101,16 +101,8 @@
         }
         $(document).ready(function() {
           getIpsum();
+
           //Waypoints
-          var $copyWaypoint = $('#copy-column-waypoint');
-          new Waypoint({
-            element: $copyWaypoint,
-            handler: function() {
-              getIpsum()
-            }, 
-            continuous: false,
-            offset: '100%'
-          });
           var $adsWaypoint = $('#ads-column-waypoint');
           new Waypoint({
             element: $adsWaypoint,
@@ -120,6 +112,16 @@
             }, 
             continuous: false
           });
+          
+          var $copyWaypoint = $('#copy-column-waypoint');
+          new Waypoint({
+            element: $copyWaypoint,
+            handler: function() {
+              getIpsum()
+            }, 
+            continuous: false
+          });
+          
         });
 
     </script>
