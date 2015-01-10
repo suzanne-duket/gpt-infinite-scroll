@@ -108,13 +108,15 @@
             handler: function() {
               getIpsum()
             }, 
-            continuous: false
+            continuous: false,
+            offset: '100%'
           });
           var $adsWaypoint = $('#ads-column-waypoint');
           new Waypoint({
-            element: $copyWaypoint,
+            element: $adsWaypoint,
             handler: function() {
-              moreContent()
+              moreContent(),
+              console.log("more please")
             }, 
             continuous: false
           });
