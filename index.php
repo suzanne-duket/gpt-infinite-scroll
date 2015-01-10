@@ -69,7 +69,7 @@
          // Create a div for the slot
          var slotDiv = document.createElement('div');
          slotDiv.id = slotName; // Id must be the same as slotName
-         document.getElementById("ads").appendChild(slotDiv);
+         document.getElementById("ad-container").appendChild(slotDiv);
 
 
          // Define the slot itself, call display() to 
