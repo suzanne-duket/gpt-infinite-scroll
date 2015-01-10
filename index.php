@@ -15,8 +15,10 @@
         height: 250px;
         width: 300px;
       }
-      #ads-column-waypoint {
+      .waypoint {
         clear: both;
+        height: 20px;
+        background-color: red;
       }
     </style>
     <script type='text/javascript'>
@@ -137,7 +139,7 @@
       <div class="row">
         <div class="col-md-8 copy-column">
           <section class="ipsum-container"></section>
-          <div id="copy-column-waypoint"></div>
+          <div id="copy-column-waypoint" class="waypoint"></div>
         </div>
         <div class="col-md-4 ads-column">
           <div id="ads">
@@ -163,7 +165,7 @@
               </script>
             </div>
           </div>
-          <div id="ads-column-waypoint"></div>
+          <div id="ads-column-waypoint" class="waypoint"></div>
         </div>
       </div>
     </div>
