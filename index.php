@@ -110,16 +110,18 @@
               moreContent(),
               console.log("more please")
             }, 
-            continuous: false
+            continuous: false,
+            offset: '100%'
           });
-          
+
           var $copyWaypoint = $('#copy-column-waypoint');
           new Waypoint({
             element: $copyWaypoint,
             handler: function() {
               getIpsum()
             }, 
-            continuous: false
+            continuous: false,
+            offset: '120%'
           });
           
         });
